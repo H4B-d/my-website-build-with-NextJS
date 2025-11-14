@@ -1,0 +1,25 @@
+.contactSection {
+  text-align: left;
+  padding: 40px 20px;
+  background: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactItem {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.contactItem a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: #0056b3;
+}
+
+

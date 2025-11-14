@@ -1,0 +1,35 @@
+.footer {
+  width: 100%; /* kéo full màn hình */
+  background-color: #1e1e1e; /* nền đen */
+  color: #f1f1f1;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 2px solid #444;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footerLinks a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #00bcd4;
+}
+
+.copyRight {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+

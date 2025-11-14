@@ -1,0 +1,181 @@
+/* Card container */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 260px;
+  max-width: 360px;
+  text-align: center;
+}
+
+/* Weather Widget */
+.weatherWidget {
+  position: relative;
+  background: linear-gradient(145deg, #f9fcff, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.weatherWidget h2 {
+  font-size: 1.1rem;
+  color: #004aad;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Search input + button */
+.weatherSearch {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 15px;
+}
+
+.weatherSearch input {
+  width: 65%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.weatherSearch button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weatherSearch button:hover {
+  background: #005fcc;
+}
+
+/* Widget box */
+.widgetBox {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 120px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+/* Loading state */
+.weatherLoading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Spinner */
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #ddd;
+  border-top-color: #0078d7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 6px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Main weather info */
+.weatherMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherIcon {
+  font-size: 48px;
+  margin-bottom: 6px;
+}
+
+.weatherTemp {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.weatherDesc {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.weatherMeta {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+/* Forecast 3 days */
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forecast h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #004aad;
+}
+
+.forecastGrid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.forecastItem {
+  background: #f7f7f7;
+  padding: 10px 15px;
+  border-radius: 12px;
+  width: 100px;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.forecastDate {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.forecastIcon {
+  font-size: 1.5rem;
+}
+
+.forecastTemp {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.forecastDesc {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Responsive tweaks */
+@media (max-width: 400px) {
+  .forecastGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
